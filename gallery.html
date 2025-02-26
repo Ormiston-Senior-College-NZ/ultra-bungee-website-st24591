@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/scripts/fancybox/jquery.fancybox.min.css">
+    <title>Gallery - Ultra Bungee</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="logo_img"><img src="img\logo.png" alt="logo"></a></li>
+                <li><a href="bridge.html">Bridge</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>图片库</h1>
+        <p>欢迎浏览我们的图片库，体验极限跳桥的精彩瞬间！</p>
+        <div class="gallery">
+            <a href="assets/images/fullsize/image1.jpg" data-fancybox="gallery">
+                <img src="assets/images/thumbnails/image1.jpg" alt="Image 1">
+            </a>
+            <a href="assets/images/fullsize/image2.jpg" data-fancybox="gallery">
+                <img src="assets/images/thumbnails/image2.jpg" alt="Image 2">
+            </a>
+            <a href="assets/images/fullsize/image3.jpg" data-fancybox="gallery">
+                <img src="assets/images/thumbnails/image3.jpg" alt="Image 3">
+            </a>
+            <!-- Add more images as needed -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ultra Bungee. 保留所有权利。</p>
+    </footer>
+    <script src="assets/scripts/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-fancybox="gallery"]').fancybox({
+                // Options for fancybox can be added here
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,17 +1,74 @@
 /* fonts */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* site colour palette */
 :root {
-    --color: 
+    --primary-color: hsl(0, 0%, 0%);
+    --secondary-color: #333;
+    --background-color: #f4f4f4;
+    --text-color: #000;
 }
 
-
 /* generic style reset */
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* add your own style rules here */
+/* body styles */
+body {
+    /* background-image: url('img/ultra-bungee-hero.jpg'); */
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* header styles */
+header {
+    background-color: var(--primary-color);
+    padding-top: 15px;
+    padding-bottom: 40px;
+    /* text-align: left; */
+}
+
+#logo_img img {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+nav ul li {
+    margin: 0 15px;
+    /* float: left; */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    /* float: left; */
+}
+
+/* main content styles */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* footer styles */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
