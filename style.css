@@ -5,7 +5,7 @@
 :root {
     --primary-color: hsl(0, 0%, 0%);
     --secondary-color: #333;
-    --background-color: #f4f4f4;
+    --background-color: #464646;
     --text-color: #000;
 }
 
@@ -71,4 +71,10 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+p {
+    color: white;
+}
+h1 {
+    color: white;
 }
