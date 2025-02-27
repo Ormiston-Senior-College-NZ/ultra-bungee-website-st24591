@@ -80,6 +80,22 @@ footer {
     width: 100%;
 }
 
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.footer-grid ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-grid .title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
 p {
     color: var(--text-color);
 }
