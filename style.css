@@ -64,9 +64,16 @@ nav ul li a {
 
 /* main content styles */
 main {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* 添加圆角 */
 }
 
 /* footer styles */
