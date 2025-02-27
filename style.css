@@ -82,3 +82,10 @@ h1 {
 ul {
     list-style-type: none;
 }
+.col-1,
+.col-2,
+.col-3,
+.col-4{
+    width: 100%;
+    padding: 1rem;
+}
