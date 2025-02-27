@@ -112,7 +112,8 @@ ul {
 a {
     color: hsl(45, 100%, 51%);
     /* 更明显的黄色 */
-    text-decoration: none;
+    text-decoration: underline;
+    /* 添加下划线 */
 }
 
 a:hover {
