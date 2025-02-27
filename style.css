@@ -16,12 +16,6 @@
     box-sizing: border-box;
 }
 
-/* logo */
-#logo_img img {
-    width: 80px;
-    height: auto;
-}
-
 /* body styles */
 body {
     /* background-image: url('img/ultra-bungee-hero.jpg'); */
@@ -29,51 +23,77 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     padding-top: 70px;
+    line-height: 1.6;
 }
 
 /* header styles */
 header {
     background-color: var(--primary-color);
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding: 15px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    /* text-align: left; */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header:hover {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
+header li {
+    text-decoration: underline;
+}
+
+header #logo {
+    margin-left: 20px;
+}
+
+.logo-size img {
+    width: 120px;
+    /* 设置logo的宽度 */
+    height: auto;
+    /* 保持宽高比 */
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    float: left;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     margin: 0 15px;
-    /* float: left; */
 }
 
 nav ul li a {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 700;
-    /* float: left; */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: hsl(45, 100%, 51%);
 }
 
 /* main content styles */
 main {
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
-
 }
 
 main img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    /* 添加圆角 */
+    margin-bottom: 1rem;
 }
 
 /* footer styles */
@@ -81,10 +101,11 @@ footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
     text-align: left;
-    padding: 1rem;
+    padding: 2rem;
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .footer-grid {
@@ -105,10 +126,12 @@ footer {
 
 p {
     color: var(--text-color);
+    margin-bottom: 1rem;
 }
 
 h1 {
     color: var(--text-color);
+    margin-bottom: 1rem;
 }
 
 /* none可隐藏无序列表“ul”的小圆点 */
@@ -118,14 +141,12 @@ ul {
 
 a {
     color: hsl(45, 100%, 51%);
-    /* 更明显的黄色 */
     text-decoration: underline;
-    /* 添加下划线 */
+    transition: color 0.3s;
 }
 
 a:hover {
     color: hsl(0, 100%, 67%);
-    /* 更明显的红色 */
 }
 
 .col-1,
