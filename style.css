@@ -15,6 +15,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* logo */
+#logo_img img {
+    width: 80px;
+    height: auto;
+}
 
 /* body styles */
 body {
@@ -30,11 +35,6 @@ header {
     padding-top: 15px;
     padding-bottom: 40px;
     /* text-align: left; */
-}
-
-#logo_img img {
-    width: 80px;
-    height: auto;
 }
 
 nav ul {
@@ -66,7 +66,7 @@ main {
 footer {
     background-color: var(--secondary-color);
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     position: relative;
     bottom: 0;
@@ -77,4 +77,8 @@ p {
 }
 h1 {
     color: white;
+}
+/* none可隐藏无序列表“ul”的小圆点 */
+ul {
+    list-style-type: none;
 }
