@@ -127,11 +127,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-/* none可隐藏无序列表“ul”的小圆点 */
-ul {
-    list-style-type: none;
-}
-
 a {
     color: hsl(45, 100%, 51%);
     text-decoration: underline;
