@@ -1,22 +1,19 @@
-/* fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* site colour palette */
 :root {
-    --primary-color: hsl(210, 22%, 49%);
-    --secondary-color: hsl(210, 22%, 39%);
-    --background-color: hsl(210, 22%, 29%);
+    --primary-color: hsl(210, 20%, 50%);
+    --secondary-color: hsl(210, 20%, 40%);
+    --background-color: hsl(210, 20%, 30%);
     --text-color: hsl(0, 0%, 100%);
 }
 
-/* generic style reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* body styles */
 body {
     /* background-image: url('img/ultra-bungee-hero.jpg'); */
     font-family: 'Roboto', sans-serif;
@@ -26,7 +23,6 @@ body {
     line-height: 1.6;
 }
 
-/* header styles */
 header {
     background-color: var(--primary-color);
     padding: 15px 0;
@@ -55,9 +51,7 @@ header #logo {
 
 .logo-size img {
     width: 120px;
-    /* 设置logo的宽度 */
     height: auto;
-    /* 保持宽高比 */
 }
 
 nav ul {
@@ -83,7 +77,7 @@ nav ul li a:hover {
     color: hsl(45, 100%, 51%);
 }
 
-/* main content styles */
+
 main {
     padding: 2rem;
     text-align: center;
@@ -96,7 +90,6 @@ main img {
     margin-bottom: 1rem;
 }
 
-/* footer styles */
 footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
@@ -108,18 +101,18 @@ footer {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.footer-grid {
+.footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
-.footer-grid ul {
+.footer ul {
     list-style-type: none;
     padding: 0;
 }
 
-.footer-grid .title {
+.footer .title {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -147,12 +140,4 @@ a {
 
 a:hover {
     color: hsl(0, 100%, 67%);
-}
-
-.col-1,
-.col-2,
-.col-3,
-.col-4 {
-    width: 100%;
-    padding: 1rem;
 }
