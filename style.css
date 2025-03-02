@@ -116,10 +116,17 @@ footer {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
+.footerimg img {
+    width: 100%;
+    height: auto;
+    float: right;
+}
 
 p {
     color: var(--text-color);
     margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 h1 {
