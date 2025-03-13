@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid rgb(255, 0, 0); */
 }
 
 body {
@@ -54,7 +55,51 @@ header #logo {
     width: 120px;
     height: auto;
 }
-
+.title {
+    color: var(--text-color2);
+    border: 3px solid var(--text-color);
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    height: 60px;
+}
+.index-button {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: rgb(255, 174, 0) 5px solid;
+    border-radius: 30px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: var(--primary-color);
+}
+.index-button li {
+    margin: 0 10px;
+    padding: 8px;
+    background-color: rgb(0, 132, 255);
+    border: 5px solid rgb(49, 193, 255);
+    border-radius: 15px;
+}
+.index-button li:hover {
+    background-color: rgb(255, 174, 0);
+    border: 10px solid rgb(49, 193, 255);
+}
+.index-button li a {
+    color: var(--text-color);
+}
+.index-button li a:hover {
+    color: red;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
 nav ul {
     list-style-type: none;
     display: flex;
@@ -87,12 +132,22 @@ main {
 main img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 1rem;
+    border: rgb(255, 174, 0) 5px solid;
+}
+main img:hover {
+    border: var(--text-color) 10px solid;
 }
 .contact-form {
     color: var(--text-color2);
     border: var(--text-color);
+    border: var(--text-color2) 5px solid;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    padding: 30px;
+    margin: 30px;
+    font-size: 1.6rem;
 }
 
 footer {
