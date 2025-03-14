@@ -62,6 +62,10 @@ header #logo {
     background-color: var(--primary-color);
     height: 60px;
 }
+.title:hover {
+    border: 3px solid var(--text-color2);
+    color: var(--text-color1);
+}
 .index-button {
     list-style-type: none;
     display: flex;
@@ -90,6 +94,18 @@ header #logo {
 }
 .index-button li a:hover {
     color: red;
+}
+.Price{
+    border: var(--text-color) 5px solid;
+    border-radius: 15px;
+    text-align: left;
+    margin: 40px;
+    padding: 30px;
+    background-color: var(--primary-color);
+}
+.Price:hover {
+    border: var(--text-color2) 5px solid;
+    background-color: var(--secondary-color);
 }
 .gallery {
     display: grid;
