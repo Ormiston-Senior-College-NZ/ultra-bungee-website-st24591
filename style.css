@@ -1,5 +1,4 @@
-
-@import url('https: //fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic');
 
 :root {
     --primary-color: hsl(210, 20%, 50%);
@@ -26,6 +25,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header styles */
 header {
     background-color: var(--primary-color);
     padding: 15px 0;
@@ -55,6 +55,8 @@ header #logo {
     width: 120px;
     height: auto;
 }
+
+/* Title styles */
 .title {
     color: var(--text-color2);
     border: 3px solid var(--text-color);
@@ -62,6 +64,7 @@ header #logo {
     background-color: var(--primary-color);
     height: 60px;
 }
+
 .title:hover {
     border: 3px solid var(--text-color2);
     color: var(--text-color1);
@@ -78,6 +81,7 @@ header #logo {
     margin-bottom: 30px;
     background-color: var(--primary-color);
 }
+
 .index-button li {
     margin: 0 10px;
     padding: 8px;
@@ -85,13 +89,16 @@ header #logo {
     border: 5px solid rgb(49, 193, 255);
     border-radius: 15px;
 }
+
 .index-button li:hover {
     background-color: rgb(255, 174, 0);
     border: 10px solid rgb(49, 193, 255);
 }
+
 .index-button li a {
     color: var(--text-color);
 }
+
 .index-button li a:hover {
     color: red;
 }
@@ -103,16 +110,29 @@ header #logo {
     padding: 30px;
     background-color: var(--primary-color);
 }
+
 .Price:hover {
     border: var(--text-color2) 5px solid;
     background-color: var(--secondary-color);
 }
+.comment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.comment .comment_text
+{
+    color: var(--text-color);
+    border: var(--text-color2) 5px solid;
+    border-radius: 15px;
+}
+/* Gallery styles */
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.8rem;
 }
-.gallery img{
+
+.gallery img {
     width: 100%;
     height: auto;
 }
@@ -152,6 +172,7 @@ main img {
     margin-bottom: 1rem;
     border: rgb(255, 174, 0) 5px solid;
 }
+
 main img:hover {
     border: var(--text-color) 10px solid;
 }
@@ -166,6 +187,7 @@ main img:hover {
     font-size: 1.6rem;
 }
 
+/* Footer styles */
 footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
@@ -191,12 +213,14 @@ footer {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
+
 .footerimg img {
     width: 100%;
     height: auto;
     float: right;
 }
 
+/* Paragraph styles */
 p {
     color: var(--text-color);
     margin-bottom: 1rem;
@@ -209,6 +233,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
+/* Link styles */
 a {
     color: var(--text-color2);
     text-decoration: underline;
