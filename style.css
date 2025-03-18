@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic');
 
+/* CSS Variables */
 :root {
     --primary-color: hsl(210, 20%, 50%);
     --secondary-color: hsl(210, 20%, 40%);
@@ -17,6 +18,7 @@
     /* border: 2px solid rgb(255, 0, 0); */
 }
 
+/* Body styles */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -47,87 +49,11 @@ header li {
 }
 
 header #logo {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .logo img {
     width: 120px;
-    height: auto;
-}
-
-/* Title styles */
-.title {
-    height: 60px;
-    border: 3px solid var(--text-color);
-    border-radius: 15px;
-    background-color: var(--primary-color);
-    color: var(--text-color2);
-}
-
-.title:hover {
-    border: 3px solid var(--text-color2);
-    color: var(--text-color1);
-}
-
-/* Index button styles */
-.index-button {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 10px;
-    list-style-type: none;
-    border: 5px solid rgb(255, 174, 0);
-    border-radius: 30px;
-    background-color: var(--primary-color);
-}
-
-.index-button li {
-    margin: 0 10px;
-    padding: 8px;
-    border: 5px solid rgb(49, 193, 255);
-    border-radius: 15px;
-    background-color: rgb(0, 132, 255);
-}
-
-.index-button li:hover {
-    border: 10px solid rgb(49, 193, 255);
-    background-color: rgb(255, 174, 0);
-}
-
-.index-button li a {
-    color: var(--text-color);
-}
-
-.index-button li a:hover {
-    color: red;
-}
-
-/* Price section styles */
-.Price {
-    margin: 40px;
-    padding: 30px;
-    border: 5px solid var(--text-color);
-    border-radius: 15px;
-    text-align: left;
-    background-color: var(--primary-color);
-}
-
-.Price:hover {
-    border: 5px solid var(--text-color2);
-    background-color: var(--secondary-color);
-}
-
-/* Gallery styles */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.8rem;
-}
-
-.gallery img {
-    width: 100%;
     height: auto;
 }
 
@@ -155,6 +81,20 @@ nav ul li a:hover {
     color: var(--text-color2);
 }
 
+/* Title styles */
+.title {
+    height: 20%;
+    border: 3px solid var(--text-color);
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+}
+
+.title:hover {
+    border: 3px solid var(--text-color2);
+    color: var(--text-color1);
+}
+
 /* Main content styles */
 main {
     padding: 2rem;
@@ -171,6 +111,71 @@ main img {
 
 main img:hover {
     border: 10px solid var(--text-color);
+}
+
+/* Gallery styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* Index button styles */
+.index-button {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 15px;
+    list-style-type: none;
+    border: 5px solid rgb(255, 174, 0);
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    width: 90%;
+}
+
+.index-button li {
+    margin: 0 10px;
+    padding: 8px;
+    border: 5px solid rgb(49, 193, 255);
+    border-radius: 15px;
+    background-color: rgb(0, 132, 255);
+    width: 30%;
+}
+
+.index-button li:hover {
+    border: 10px solid rgb(49, 193, 255);
+    background-color: rgb(255, 174, 0);
+}
+
+.index-button li a {
+    color: var(--text-color);
+}
+
+.index-button li a:hover {
+    color: red;
+}
+
+/* Price section styles */
+.Price {
+    margin: 30px;
+    padding: 30px;
+    border: 5px solid var(--text-color);
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--primary-color);
+    width: 90%;
+}
+
+.Price:hover {
+    border: 5px solid var(--text-color2);
+    background-color: var(--secondary-color);
 }
 
 /* Contact form styles */
