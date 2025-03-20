@@ -6,29 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Ultra Bungee</title>
 </head>
 
 <body>
     <header>
-        <div id="logo" class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Ultra Bungee"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bridge.html">Bridge</a></li>
-                <li><a href="canyon.html">Canyon</a></li>
-                <li><a href="tower.html">Tower</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <!-- 默认选中复选框 -->
+            <div id="logo" class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Ultra Bungee"></a>
+            </div>
+            <input type="checkbox" id="toggler" checked>
+            <label for="toggler" class="fas fa-bars">☰ Menu</label>
+            <nav class="navbar">
+                <br>
+                <br>
+                <a href="index.html"><strong>Home</strong></a>
+                <a href="canyon.html"><strong>Canyon</strong></a>
+                <a href="tower.html"><strong>Tower</strong></a>
+                <a href="gallery.html"><strong>Gallery</strong></a>
+                <a href="contact.html"><strong>Contact</strong></a>
+            </nav>
     </header>
     <main>
         <h1 class="title"><strong>Welcome to Ultra Bungee</strong></h1>
         <img src="img/bungee2.jpg" alt="bungee bridge">
-        
         <h2 style="margin: 0px 0px 0px;font-size: 27px;">Feel the fall with Ultra Bungee</h2>
         <div>
             <p>
@@ -40,12 +42,18 @@
                 personal experience as you jump from Iron Bridge, Oreti River.
             </p>
             <ul class="index-button">
-                <li><a href="bridge.html">Bridge Jump</a></li>
-                <li><a href="canyon.html">Canyon Jump</a></li>
-                <li><a href="tower.html">Tower Jump</a></li>
+                <a href="#bridge"><li>Bridge Jump</li></a>
+                <a href="canyon.html"><li>Canyon Jump</li></a>
+                <a href="tower.html"><li>Tower Jump</li></a>
             </ul>
+            <div id="bridge">
+                <br>
+                <h1 class="title">bridge</h1>
+                <br>
+                <img src="img\bridge_hero_image.jpg" alt="bridge">
+            </div>
             <div>
-                <ol class="Price">
+                <ol class="Price" id="Price">
                     <li>
                         <p>$180 Adult Price(Anyone over 14 years is considered to be an adult.)</p>
                     </li>
@@ -117,5 +125,17 @@
         </p>
     </footer>
 </body>
+<script>
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault(); 
+        $('html, body').animate(
+            {
+                scrollTop: $($(this).attr('href')).offset().top, 
+            },
+            500, 
+            "linear" 
+        );
+    });
+</script>
 
 </html>

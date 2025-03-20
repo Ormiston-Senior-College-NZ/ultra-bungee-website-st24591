@@ -44,12 +44,62 @@ header:hover {
     text-decoration: none;
 }
 
-header li {
-    text-decoration: underline;
-}
-
 header #logo {
     margin-left: 40px;
+}
+
+/* Hide checkbox */
+#toggler {
+    display: none;
+    /* position: absolute;
+    right: 10px;
+    top: 10px; */
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    background: var(--text-color2);
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid var(--text-color);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+label:hover {
+    color: var(--text-color3);
+}
+
+/* 以下为测试 */
+
+.navbar {
+    justify-content: flex-start;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    /* 动画效果 */
+}
+
+/* 当复选框未被选中时，菜单显示 */
+#toggler:not(:checked)~.navbar {
+    max-height: 500px;
+    /* 假设最大高度，调整为实际菜单高度 */
+}
+
+#toggler:not(:checked)~.logo img{
+    width: 400px;
+    height: auto;
+}
+/* 菜单项样式 */
+.navbar a {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    margin-right: 40px;
 }
 
 .logo img {
@@ -140,7 +190,7 @@ main img:hover {
     width: 90%;
 }
 
-.index-button li {
+.index-button a {
     margin: 0 10px;
     padding: 8px;
     border: 5px solid rgb(49, 193, 255);
@@ -149,17 +199,16 @@ main img:hover {
     width: 30%;
 }
 
-.index-button li:hover {
-    border: 10px solid rgb(49, 193, 255);
+.index-button a:hover {
     background-color: rgb(255, 174, 0);
 }
 
-.index-button li a {
+.index-button a li {
     color: var(--text-color);
 }
 
-.index-button li a:hover {
-    color: red;
+.index-button a li:hover {
+    color: var(--text-color);
 }
 
 /* Price section styles */
